@@ -122,7 +122,7 @@ public class DkatalisttestApplication
 					continue;
 				}
 
-				targetName = splitUserInput[1].trim();
+				targetName = splitUserInput[1].trim().toLowerCase();
 				amount = Integer.parseInt(splitUserInput[2].trim());
 
 				peopleAction.transfer(loginName, targetName, amount, peopleInfo);
